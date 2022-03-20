@@ -4,6 +4,12 @@ import random
 
 
 def en_li_vinigret(start_date: datetime, end_date: datetime):
+    """
+    The function gets two dates, randomly chooses a date between them and if the date is Monday, prints "en li vinigret"
+    :param start_date: first date
+    :param end_date: second date
+    :return: returns the randomly chosen date
+    """
     time_between_dates = end_date - start_date
     days_between_dates = time_between_dates.days
     random_number_of_days = random.randrange(days_between_dates)
